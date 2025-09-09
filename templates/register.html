@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h4 class="mb-0"><i class="bi bi-person-plus"></i> Kayıt Ol</h4>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div class="mb-3">
+                        <label class="form-label">Kullanıcı Adı</label>
+                        <input class="form-control" name="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Parola</label>
+                        <input class="form-control" type="password" name="password" required>
+                    </div>
+                    <button class="btn btn-success w-100" type="submit">
+                        <i class="bi bi-check-circle"></i> Kayıt Ol
+                    </button>
+                </form>
+                <hr>
+                <div class="text-center">
+                    <small>Zaten hesabın var mı? <a href="/login">Giriş yap</a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
